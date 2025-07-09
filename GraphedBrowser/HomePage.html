@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Graphed Search</title>
+
+  <!-- Substitute for jsMath-cmmi10 -->
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital@1&display=swap" rel="stylesheet">
+
+  <style>
+    @font-face {
+      font-family: 'Century Gothic';
+      src: local('Century Gothic'), local('CenturyGothic');
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #082E32;
+      color: #F0F0F0;
+      font-family: sans-serif;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      text-align: center;
+      transform: translateY(-10%);
+    }
+
+    .title {
+      font-size: 5vw;
+      line-height: 1.2;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+    }
+
+    .graphed {
+      font-family: 'Crimson Pro', serif;
+      font-style: italic;
+    }
+
+    .search {
+      font-family: 'Century Gothic', sans-serif;
+      font-weight: bold;
+    }
+
+    .search-bar {
+      margin-top: 2.2rem;
+      width: 60vw;
+      max-width: 600px;
+      height: 3.5rem;
+      font-size: 1.5rem;
+      padding: 0 1.5rem;
+      background-color: #D9D9D9;
+      border-radius: 2rem;
+      border: none;
+      outline: none;
+    }
+
+    @media (max-width: 768px) {
+      .title {
+        font-size: 8vw;
+      }
+
+      .search-bar {
+        height: 3rem;
+        font-size: 1.2rem;
+        width: 80vw;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .title {
+        font-size: 10vw;
+      }
+
+      .search-bar {
+        height: 2.8rem;
+        font-size: 1rem;
+        width: 85vw;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="title">
+      <span class="graphed">Graphed</span>
+      <span class="search">Search</span>
+    </div>
+    <input class="search-bar" id="search" type="text" placeholder="Search the web...">
+  </div>
+</body>
+</html>
